@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'app_helper.dart';
+
 class UIHELPER {
   static final String snowLottieJson = _lottiePath("snow_santa");
   static final String letitLottieJson = _lottiePath("let_it_snow");
@@ -44,4 +46,18 @@ class UIHELPER {
       offset: Offset(.0, 10.0),
     );
   }
+
+  /// [THemeData]
+  static final snowTheme = ThemeData(
+    scaffoldBackgroundColor: Colors.black,
+    fontFamily: APPHELPER.FONT_FAMILY,
+    textTheme: TextTheme(
+      display1:
+          TextStyle(fontSize: UIHELPER.FONT_SIZE_NORMAL, color: Colors.white),
+      display2:
+          TextStyle(fontSize: UIHELPER.FONT_SIZE_MEDIUM, color: Colors.white),
+      display3:
+          TextStyle(fontSize: UIHELPER.FONT_SIZE_HIGH, color: Colors.white),
+    ),
+  );
 }

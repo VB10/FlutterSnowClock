@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:mark922_flutter_lottie/mark922_flutter_lottie.dart';
 import 'package:provider/provider.dart';
-import 'package:vb_clock/helper/app_helper.dart';
-import 'package:vb_clock/helper/ui_helper.dart';
 
+import '../helper/app_helper.dart';
+import '../helper/ui_helper.dart';
 import '../viewmodel/snow_view_model.dart';
 
 class SnowClockView extends StatefulWidget {
